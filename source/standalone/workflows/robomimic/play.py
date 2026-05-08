@@ -22,6 +22,7 @@ parser.add_argument("--checkpoint", type=str, default=None, help="Pytorch model 
 AppLauncher.add_app_launcher_args(parser)
 # parse the arguments
 args_cli = parser.parse_args()
+args_cli.enable_cameras = True
 
 # launch omniverse app
 app_launcher = AppLauncher(args_cli)

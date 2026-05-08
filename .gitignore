@@ -35,6 +35,8 @@ docker/.container.yaml
 !.vscode
 
 # Outputs
+/log/
+/logs/
 **/output/*
 **/outputs/*
 **/videos/*
@@ -42,6 +44,9 @@ docker/.container.yaml
 **/.neptune/*
 docker/artifacts/
 *.tmp
+
+# # Root-level random temp files, e.g. _ljg93_j
+# /????????
 
 # Doc Outputs
 **/docs/_build/*
